@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CSS CARD PRODOTTO */
+.card {
+    width: 250px;
+    height: 370px;
+    border-radius: 60px;
+    overflow: hidden;
+    min-width: 250px;
+   min-height: 370px;
+}
+.immagineCard {
+    background-image: url(assets/honey.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 73%;
+}
+.infoCard {
+    background-color: rgba(240, 230, 173, 0.807);
+    height: 27%;
+}
+.info {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 0.95;
+}
+.info p span:first-child {
+    font-weight: bold;
+}
+.info p span:last-child {
+    font-size: 0.9em;
+}
+.infoCard {
+    text-align: center;
+    
+}
+.infoCard button {
+    width: 60%;
+    height: 30px;
+    border: none;
+    background-color: rgba(238, 186, 90, 0.776);
+    border-radius: 30px;
+    font-size: 0.7em;
+}
+.infoCard button:hover {
+    font-weight: bold;
+}
+
+
+/*NAVBAR*/
+.navBar {
+    width: 95%;
+    max-width: 600px;
+    min-width: 600px;
+    height: 90px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 221, 0, 0.241);;
+}
+#centerButton {
+    border-radius: 30px;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgba(255, 221, 0, 0.564);
+}
+#logoShop {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#logoShop img {
+    width: 35px;
+}
+.navBar button {
+    height: 25px;
+    border: none;
+    background-color: rgba(255, 221, 0, 0.564);
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    font-size: 0.7em; 
+}
+
+/*ARTICOLO*/
+.container {
+    width: 650px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    background-color: rgba(241, 223, 64, 0.175);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.immagineArticolo {
+    height: 240px;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.imgArt {
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/honey.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.article {
+    height: 220px;
+    width:305px;
+    font-size: 0.8em;
+    color: rgb(106, 19, 19);
+    padding:15px 10px 0px 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 280px;
+        height: 500px;
+    }
+    .immagineArticolo {
+        height: 210px;
+        width: 260px;
+    }
+    .article {
+        font-size: 0.9em;
+        width: 260px ;
+        height: auto;
+    }
+    .article h3 {
+        font-size: 1.4em;
+    }
+  }
